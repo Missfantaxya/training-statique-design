@@ -1,0 +1,25 @@
+@use 'src/styles/vars';
+
+.game {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__info {
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    // list-style-image: url(src/assets/images/de.svg);
+    //TODO régler le pb de taille du svg
+  }
+}
+
+.gamePicture {
+  &__image {
+    width: 15vw;
+  }
+}

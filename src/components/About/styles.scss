@@ -1,0 +1,53 @@
+@use 'src/styles/vars';
+
+.about {
+  height: 80vh;
+  &__wrapper {
+    display: flex;
+    flex-direction: raw;
+    align-items: baseline;
+    justify-content: center;
+    margin: 7vh 0;
+    color: rgb(55, 182, 255);
+  }
+  &__Title {
+    font-size: 5vh;
+    font-weight: 4vw;
+    font-family: cursive;
+  }
+  &__subTitle {
+    font-size: 2.7vh;
+    font-weight: 2.6vw;
+  }
+  &__info {
+    display: flex;
+    flex-flow: raw nowrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 8vw;
+  }
+  &__avatar {
+    margin: 0 3vw;
+    min-width: 180px;
+    min-height: 180px;
+    background-image: url(src/assets/images/alexiaSkrzypczak.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+  &__text {
+    padding-top: 65px;
+    line-height: 4vh;
+  }
+  &__username {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2vh;
+    font-weight: 1vw;
+    font-style: italic;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    background: -webkit-linear-gradient(#38ddff, #143561);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

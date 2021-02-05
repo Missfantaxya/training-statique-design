@@ -1,0 +1,33 @@
+@use 'src/styles/vars';
+
+.contact {
+  height: 80vh;
+  &__subTitle {
+    font-size: 7.6vh;
+    font-weight: 2vw;
+    font-family: cursive;
+    color: rgb(55, 182, 255);
+    margin-top: 7vh;
+    text-align: center;
+    text-shadow: 1px 2px 3px #03314b;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5vh;
+    font-weight: 1vw;
+    padding-top: 8vh;
+  }
+  &__icone {
+    height: 5vh;
+    margin-right: 3vw;
+  }
+  &__link {
+    padding: 2vh;
+    vertical-align: sub;
+  }
+  &__link:hover {
+    color: #ff964d;
+  }
+}
