@@ -14,9 +14,12 @@
 
     transition: 0.7s;
 
-    color: #fff;
-    background-color: #8063e1;
-    background-image: linear-gradient(135deg, #bd7be8, #8063e1);
+    background-color: rgb(255, 214, 186);
+    background-image: linear-gradient(
+      135deg,
+      rgba(55, 182, 255, 1),
+      rgba(255, 150, 77, 1)
+    );
     top: 3vh;
     // z-index: 2;
   }
