@@ -1,1 +1,48 @@
 @use 'src/styles/vars';
+
+.brands {
+  background-color: rgb(255, 252, 239);
+  &__first {
+    -webkit-clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+    clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+    z-index: -1;
+    background-color: rgba(55, 182, 255, 1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  &__second {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background-color: rgba(255, 150, 77, 0.4);
+    -webkit-clip-path: polygon(64% 100%, 100% 27%, 62% 67%, 4% 100%);
+    clip-path: polygon(64% 100%, 100% 27%, 62% 67%, 4% 100%);
+  }
+  &__third {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
+    background-color: rgb(255, 252, 239);
+  }
+  &__container {
+    margin: 20px 50px;
+    padding: 20px 0;
+  }
+  &__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  &__listGames {
+    display: none;
+  }
+}
+// TODO comprendre pourquoi ça ne fonctionne pas
+.cardName:hover .brands__listGames {
+  display: block;
+}

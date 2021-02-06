@@ -8,16 +8,19 @@ import GameContent from './GameContent';
 import GamePicture from './GamePicture';
 
 // == Composant
-//TODO faire sous forme de carte avec un effet
-const Game = (props) => (
-  <ul className="game">
-    <li className="game__item">{props.gameTitle}
-      <div className="game__info">
-        <GamePicture />
-        <GameContent />
+const Game = ({ gameTitle }) => (
+  <div className="game">
+    <div className="game__list">
+      <div className="game__title">
+        <div className="game__item">{gameTitle}
+          <div className="game__info">
+            <GamePicture />
+            <GameContent />
+          </div>
+        </div>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 );
 
 Game.propTypes = {

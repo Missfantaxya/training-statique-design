@@ -1,25 +1,28 @@
 @use 'src/styles/vars';
 
+.gamePicture {
+  width: 15vw;
+  &__image {
+    width: 100%;
+    margin-top: 1vh;
+  }
+}
+
+.gameContent {
+  &__article {
+    margin-left: 2vw;
+    width: 25vw;
+  }
+}
+
 .game {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  &__title {
+    margin-left: 1vw;
+  }
   &__info {
     display: flex;
     flex-direction: raw;
     justify-content: center;
     align-items: center;
-  }
-  &__item {
-    // list-style-image: url(src/assets/images/de.svg);
-    //TODO régler le pb de taille du svg
-  }
-}
-
-.gamePicture {
-  &__image {
-    width: 15vw;
   }
 }
